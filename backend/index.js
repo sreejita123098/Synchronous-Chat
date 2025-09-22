@@ -8,7 +8,7 @@ import userRoute from './routes/user.route.js';
 dotenv.config();
 
 
-const app = express();
+const app = express(); // converting to express app
 app.use(express.json());
 const PORT=process.env.PORT || 5000
 const URI=process.env.MONGODB_URI;
@@ -24,7 +24,7 @@ try{
     console.log(error);
 }
 
-app.use("/user",userRoute);
+app.use("/user",userRoute); //using middleware
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
