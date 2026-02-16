@@ -53,7 +53,7 @@ import { Link } from 'react-router-dom';
   return (
     <>
     
-    <div className='justify-center items-center mx-auto my-20'>
+    <div className='flex justify-center items-center mx-auto my-20'>
     <form className="  px-4 pt-4 pb-4 py-4 rounded-lg  bg-blue-200 justify-center items-center gap-4 margin-auto"
     onSubmit={handleSubmit(onSubmit)}>
         

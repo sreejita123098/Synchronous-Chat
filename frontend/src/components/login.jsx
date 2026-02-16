@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useAuth } from '../hooks/useAuth';
 import { Link } from 'react-router-dom';
 
+
 function Login() {
   const {authUser,setAuthUser}=useAuth();
    const {
@@ -44,11 +45,12 @@ function Login() {
 
   return (
     <>
-    <div className='justify-center items-center mx-auto my-40'>
+    <div className='flex justify-center items-center mx-auto my-40'>
     <form  onSubmit={handleSubmit(onSubmit)}
-    className="  px-4 pt-4 pb-4 py-4 rounded-lg  bg-blue-100 justify-center items-center gap-4 margin-auto">
+    className="  px-4 pt-4 pb-4 py-4 rounded-lg  bg-blue-300 justify-center items-center gap-4 margin-auto">
         <h1 className="text-3xl text-blue-800">Messenger</h1>
-        <h1>Login with your <span className="text-blue-800 text-2xl">Account....</span> </h1><br></br>
+        <h1>Login with your Account</h1>
+        <br></br>
         <div className="  justify-center items-center  w-80 space-y-2 ">
            
 
