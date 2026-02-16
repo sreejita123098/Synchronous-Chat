@@ -1,10 +1,11 @@
 @plugin "daisyui";
-.flex-sreejita::-webkit-scrollbar{
 
-    display: none;
-
-}
+/* Smooth scrollbar hiding across browsers */
 .overflow-y-auto {
     overflow-y: auto;
     scrollbar-width: none;
+}
+
+.overflow-y-auto::-webkit-scrollbar {
+    display: none;
 }

@@ -4,10 +4,7 @@ import Chats from './chats'
 function chatss() {
   return (
     <>
-    <div  style={{maxHeight:"calc(84vh) "}} className="overflow-y-scroll
-            [scrollbar-width:none] 
-            [-ms-overflow-style:none] 
-            [&::-webkit-scrollbar]:hidden flex-sreejita p-3 ">
+    <div className="p-4 flex flex-col gap-2">
         <Chats></Chats>
         <Chats></Chats>
         <Chats></Chats>

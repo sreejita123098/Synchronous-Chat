@@ -16,7 +16,7 @@ function App() {
     <>
     <Routes>
       <Route path="/" element={
-        authUser?(<div className="flex h-screen w-sceen">
+        authUser?(<div className="flex h-screen w-screen overflow-hidden">
           <Logout></Logout>
           <Left></Left>
           <Right></Right>

@@ -5,17 +5,14 @@ import Type from './type'
 
 function Right ()  {
   return (
-    <div className=" w-[70%] border border-black bg-slate-800 text-white px-2 py-1">
-      
-      
-      <Chatuser ></Chatuser>
-      <hr></hr>
-      <br></br>
-      <div className="" style={{maxHeight:"calc(92vh-8vh) "}} >
-      <Chatss></Chatss>
+    <div className="w-[70%] h-screen bg-slate-800 text-white flex flex-col border border-gray-300">
+      <Chatuser></Chatuser>
+      <hr className="border-gray-600"></hr>
+      <div className="flex-1 overflow-y-auto">
+        <Chatss></Chatss>
       </div>
-      <div className="absolute bottom-0 w-[70%] ">
-      <Type></Type>
+      <div className="border-t border-gray-600">
+        <Type></Type>
       </div>
 
 
